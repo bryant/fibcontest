@@ -8,4 +8,4 @@
 import Data.Matrix (fromLists, getElem)
 bigfib 0 = 0
 bigfib n = getElem 1 2 $ (fromLists [[1, 1], [1, 0]]) ^ n
-main = print $ bigfib 4374987
+main = print $ bigfib 4374897
