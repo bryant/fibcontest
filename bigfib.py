@@ -15,8 +15,7 @@ def fib3(nth):
     from decimal import Decimal as D
     sqrt5 = D(5).sqrt()
     bigphi = (1 + sqrt5) / 2
-    miniphi = (1 - sqrt5) / 2
-    return int((bigphi**nth - miniphi**nth) / sqrt5)
+    return int((bigphi**nth / sqrt5).to_integral())
 
 if __name__ == "__main__":
     with open('py.fib', 'w') as f:
